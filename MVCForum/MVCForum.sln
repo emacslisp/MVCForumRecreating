@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCForum", "MVCForum\MVCForum.csproj", "{570A43FF-5F90-420E-9FA0-DAA73C3A88FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCForum.WebSite", "MVCForum\MVCForum.WebSite.csproj", "{570A43FF-5F90-420E-9FA0-DAA73C3A88FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
