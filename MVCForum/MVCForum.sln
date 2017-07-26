@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCForum.WebSite", "MVCForu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCForum.Data", "MVCForum.Data\MVCForum.Data.csproj", "{A8442EF7-A37B-47EE-9E88-B86A7534C714}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCForum.Domain", "MVCForum.Core\MVCForum.Domain.csproj", "{EF16A18D-FA72-43C5-80B2-C0C5EE086162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCForum.Utilities", "MVCForum.Utilities\MVCForum.Utilities.csproj", "{BD07B2AF-B128-487D-84B1-3EF295170F7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A8442EF7-A37B-47EE-9E88-B86A7534C714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8442EF7-A37B-47EE-9E88-B86A7534C714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8442EF7-A37B-47EE-9E88-B86A7534C714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF16A18D-FA72-43C5-80B2-C0C5EE086162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF16A18D-FA72-43C5-80B2-C0C5EE086162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF16A18D-FA72-43C5-80B2-C0C5EE086162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF16A18D-FA72-43C5-80B2-C0C5EE086162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD07B2AF-B128-487D-84B1-3EF295170F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD07B2AF-B128-487D-84B1-3EF295170F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD07B2AF-B128-487D-84B1-3EF295170F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD07B2AF-B128-487D-84B1-3EF295170F7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

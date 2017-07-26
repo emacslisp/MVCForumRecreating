@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF16A18D-FA72-43C5-80B2-C0C5EE086162}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVCForum.Core</RootNamespace>
+    <AssemblyName>MVCForum.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DomainModel\Activity\Activity.cs" />
+    <Compile Include="DomainModel\Activity\ActivityBase.cs" />
+    <Compile Include="DomainModel\Activity\BadgeActivity.cs" />
+    <Compile Include="DomainModel\Activity\MemberJoinedActivity.cs" />
+    <Compile Include="DomainModel\Activity\ProfileUpdatedActivity.cs" />
+    <Compile Include="DomainModel\Attributes\AwardsPointsAttribute.cs" />
+    <Compile Include="DomainModel\Attributes\DescriptionAttribute.cs" />
+    <Compile Include="DomainModel\Attributes\DisplayNameAttribute.cs" />
+    <Compile Include="DomainModel\Attributes\FilePathAttribute.cs" />
+    <Compile Include="DomainModel\Attributes\IdAttribute.cs" />
+    <Compile Include="DomainModel\Attributes\ImageAttribute.cs" />
+    <Compile Include="DomainModel\Attributes\NameAttribute.cs" />
+    <Compile Include="DomainModel\Entities\Badge.cs" />
+    <Compile Include="DomainModel\Entities\BadgeTypeTimeLastChecked.cs" />
+    <Compile Include="DomainModel\Entities\BannedEmail.cs" />
+    <Compile Include="DomainModel\Entities\BannedWord.cs" />
+    <Compile Include="DomainModel\Entities\Block.cs" />
+    <Compile Include="DomainModel\Entities\Category.cs" />
+    <Compile Include="DomainModel\Entities\CategoryNotification.cs" />
+    <Compile Include="DomainModel\Entities\CategoryPermissions.cs" />
+    <Compile Include="DomainModel\Entities\Email.cs" />
+    <Compile Include="DomainModel\Entities\Entity.cs" />
+    <Compile Include="DomainModel\Entities\Favourite.cs" />
+    <Compile Include="DomainModel\Entities\GlobalPermission.cs" />
+    <Compile Include="DomainModel\Entities\Language.cs" />
+    <Compile Include="DomainModel\Entities\LocaleResourceKey.cs" />
+    <Compile Include="DomainModel\Entities\LocaleStringResource.cs" />
+    <Compile Include="DomainModel\Entities\MembershipRole.cs" />
+    <Compile Include="DomainModel\Entities\MembershipUser.cs" />
+    <Compile Include="DomainModel\Entities\MembershipUserPoints.cs" />
+    <Compile Include="DomainModel\Entities\Permission.cs" />
+    <Compile Include="DomainModel\Entities\PermissionForRole.cs" />
+    <Compile Include="DomainModel\Entities\Poll.cs" />
+    <Compile Include="DomainModel\Entities\PollAnswer.cs" />
+    <Compile Include="DomainModel\Entities\PollVote.cs" />
+    <Compile Include="DomainModel\Entities\Post.cs" />
+    <Compile Include="DomainModel\Entities\PrivateMessage.cs" />
+    <Compile Include="DomainModel\Entities\Settings.cs" />
+    <Compile Include="DomainModel\Entities\TagNotification.cs" />
+    <Compile Include="DomainModel\Entities\Topic.cs" />
+    <Compile Include="DomainModel\Entities\TopicNotification.cs" />
+    <Compile Include="DomainModel\Entities\TopicTag.cs" />
+    <Compile Include="DomainModel\Entities\Vote.cs" />
+    <Compile Include="DomainModel\Enums\LoginType.cs" />
+    <Compile Include="DomainModel\General\CategoryWithSubCategories.cs" />
+    <Compile Include="DomainModel\General\InstallerResult.cs" />
+    <Compile Include="DomainModel\General\LanguageCsvReport.cs" />
+    <Compile Include="DomainModel\General\LogEntry.cs" />
+    <Compile Include="DomainModel\General\MarkAsSolutionReminder.cs" />
+    <Compile Include="DomainModel\General\PagedFullList.cs" />
+    <Compile Include="DomainModel\General\PagedList.cs" />
+    <Compile Include="DomainModel\General\PermissionSet.cs" />
+    <Compile Include="DomainModel\General\Report.cs" />
+    <Compile Include="DomainModel\General\RssItem.cs" />
+    <Compile Include="DomainModel\General\SitemapEntry.cs" />
+    <Compile Include="DomainModel\General\Theme.cs" />
+    <Compile Include="DomainModel\General\UploadedFile.cs" />
+    <Compile Include="DomainModel\General\UploadFileResult.cs" />
+    <Compile Include="DomainModel\LinqKit\ExpandableQuery.cs" />
+    <Compile Include="DomainModel\LinqKit\ExpressionExpander.cs" />
+    <Compile Include="DomainModel\LinqKit\ExpressionVisitor.cs" />
+    <Compile Include="DomainModel\LinqKit\Extensions.cs" />
+    <Compile Include="DomainModel\LinqKit\Linq.cs" />
+    <Compile Include="DomainModel\LinqKit\PredicateBuilder.cs" />
+    <Compile Include="DomainModel\MVCForumAPI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
