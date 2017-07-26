@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MVCForum.Domain.DomainModel;
+using MVCForum.Domain.DomainModel.Activity;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;

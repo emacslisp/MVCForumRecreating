@@ -50,5 +50,11 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVCForum.Core\MVCForum.Domain.csproj">
+      <Project>{ef16a18d-fa72-43c5-80b2-c0c5ee086162}</Project>
+      <Name>MVCForum.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
